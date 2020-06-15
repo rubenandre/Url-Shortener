@@ -4,7 +4,7 @@ class ResolveLocalParameterDestination
   def redirect_to(local_parameter)
     begin
       destination_url = find_destination_url(local_parameter)
-      return "https://#{destination_url.redirect_url}"
+      return "#{destination_url.redirect_url}"
     rescue
       return '/'
     end
